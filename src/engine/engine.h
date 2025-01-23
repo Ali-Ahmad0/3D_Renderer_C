@@ -4,6 +4,7 @@
 #include <stdbool.h>
 
 #include "../common/util.h"
+#include "../camera/camera.h"
 
 #define TARGET_DELTA_TIME 16
 
@@ -21,5 +22,5 @@ typedef struct
 
 engine_t engine_create();
 void engine_init(engine_t* engine);
-void engine_update(engine_t* engine);
+void engine_update(engine_t* engine, camera_t* camera);
 void engine_exit(engine_t* engine);

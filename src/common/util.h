@@ -4,7 +4,7 @@
 
 #define WINDOW_SIZE_X 1920
 #define WINDOW_SIZE_Y 1080
-#define FOV 10
+#define FOV 60
 
 // 2D Vector
 typedef struct 

@@ -145,6 +145,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\camera\camera.c" />
     <ClCompile Include="src\common\util.c" />
     <ClCompile Include="src\common\vertex.c" />
     <ClCompile Include="src\engine\engine.c" />
@@ -153,6 +154,7 @@
     <ClCompile Include="src\rendering\rendering.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\camera\camera.h" />
     <ClInclude Include="src\common\vertex.h" />
     <ClInclude Include="src\engine\engine.h" />
     <ClInclude Include="src\common\util.h" />
