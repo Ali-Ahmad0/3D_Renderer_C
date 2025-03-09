@@ -13,14 +13,14 @@ uint32_t hsv_to_rgb(float h, float s, float v)
 	float bf;
 
 	// Ensure valid hsv
-	h = fmod(h, 360.0f);
+	h = (float)fmod(h, 360.0f);
 	if (h < 0)
 		h += 360.0f;
 	s = s > 1.0f ? 1.0f : (s < 0.0f ? 0.0f : s);
 	v = v > 1.0f ? 1.0f : (v < 0.0f ? 0.0f : v);
 
 	float c = v * s;
-	float x = c * (1 - fabsf(fmod(h / 60.0f, 2) - 1));
+	float x = c * (float)(1.0f - (float)fabsf((float)fmod(h / 60.0f, 2) - 1.0f));
 	float m = v - c;
 
 	if (h >= 0 && h < 60)

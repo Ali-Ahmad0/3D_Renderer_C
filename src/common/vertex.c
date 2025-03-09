@@ -63,8 +63,8 @@ void rotate_z(vec3_t* vertex, float theta)
 // Rotate a vertex along a custom axis
 void rotate_a(vec3_t* vector, vec3_t axis, float theta) 
 {
-	float c = cos(theta);
-	float s = sin(theta);
+	float c = (float)cos(theta);
+	float s = (float)sin(theta);
 
 	vec3_t temp = {
 		vector->x * (axis.x * axis.x * (1 - c) + c) +
