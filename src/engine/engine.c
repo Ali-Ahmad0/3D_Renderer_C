@@ -21,9 +21,9 @@ void engine_init(engine_t* engine)
 	if (SDL_Init(SDL_INIT_EVERYTHING) == 0)
 	{
 		// Initialize the window
-		engine->window = SDL_CreateWindow("3D",
+		engine->window = SDL_CreateWindow("3D Renderer - C",
 			SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 
-			WINDOW_SIZE_X, WINDOW_SIZE_Y, SDL_WINDOW_FULLSCREEN
+			WINDOW_SIZE_X, WINDOW_SIZE_Y, 0
 		);
 
 		// Initialize the renderer
